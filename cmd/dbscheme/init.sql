@@ -1,0 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS `Integration` DEFAULT CHARACTER SET utf8mb4;
+USE `Integration`;
+
+CREATE TABLE IF NOT EXISTS `Integration`.`Message` (
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `message` VARCHAR(255) NOT NULL,
+    UNIQUE INDEX `id_UNIQUE` (`id` ASC) VISIBLE, 
+    PRIMARY KEY (`id`))
+ENGINE = InnoDB;
